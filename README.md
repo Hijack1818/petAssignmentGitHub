@@ -2,6 +2,8 @@ Pet Management API
 This Spring Boot application provides a simple Pet Management API with endpoints for creating, updating, retrieving, and deleting pet records. It interacts with an external Pet Store API for data operations.
 
 Endpoints
+
+
 Create a New Pet
 POST /savePet
 
@@ -27,6 +29,8 @@ Copy code
   ],
   "status": "available"
 }
+
+
 Update an Existing Pet
 PATCH /updatePet
 
@@ -39,10 +43,12 @@ Copy code
   "name": "amit",
   "status": "available"
 }
+
 Retrieve Pet Data
 GET /getPet/{id}
 
 Retrieves pet data by specifying the pet's ID in the URL path.
+
 
 Delete a Pet
 DELETE /deletePet/{id}
