@@ -1,6 +1,8 @@
 Pet Management API
 This Spring Boot application provides a simple Pet Management API with endpoints for creating, updating, retrieving, and deleting pet records. It interacts with an external Pet Store API for data operations.
 
+To get start just clone this and open with your favourit ide (prefered: Spring boot tool suit) 
+
 Endpoints
 
 
