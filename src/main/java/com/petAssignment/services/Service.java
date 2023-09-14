@@ -6,6 +6,7 @@ import org.springframework.web.client.RestTemplate;
 @org.springframework.stereotype.Service
 public class Service {
 
+	//find already exist id
 	public boolean findId(long id) {
 		System.out.print(id);
 		try {
@@ -17,5 +18,16 @@ public class Service {
 		catch(Exception ex) {
 			return false;
 		}
+	}
+
+	//extract id from the body
+	public long extractID(String body) {
+		int first = body.indexOf("id");
+		first = body.indexOf(":",first);
+		int last = body.indexOf(",", first);
+		String strId = body.substring(first+2,last);
+		return Integer.parseInt(strId);
 	}	
+	
+	
 }
